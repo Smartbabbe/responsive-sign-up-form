@@ -1,0 +1,95 @@
+
+body {
+    background-color: black;
+}
+
+.main {
+    background: url("bg-intro-desktop.png");
+    margin: 8% auto;
+    width: 65%;
+    height: fit-content;
+    background-color: hsl(0, 100%, 74%);
+}
+
+.catalog {
+    box-sizing: border-box;
+    box-shadow: 20px;
+    display: flex;
+    margin-top: 65px;
+    margin-bottom: 200px;
+    margin-left: 60px;
+}
+
+.left {
+    flex: 40%;
+    font-family: poppins;
+    font-weight: 400;
+    color: antiquewhite;
+    padding: 50px;
+    padding-right: 0;
+    margin-top: 50px;
+}
+
+.right {
+    flex: 60%;
+    margin: 20px;
+    padding: 50px;
+    padding-right: 0;
+    line-height: 1.5;
+
+}
+
+.bottom {
+    text-align: left;
+    font-size: 16px;
+    background-color: white;
+    border: 1px grey solid;
+    padding: 20px;
+    margin: 5px;
+    width: 50%;
+    border-radius: 15px 15px;
+    margin-left: 20px;
+}
+
+form {
+    line-height: 2;
+    text-align: center;
+}
+
+.button1 {
+    padding: 5px;
+    border: 1px solid hsl(248, 32%, 49%);
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+}
+
+.button2 {
+    font-size: 10px;
+    font-weight: 500;
+    border: 1px solid hsl(154, 59%, 51%);
+    color: white;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 15px;
+    background-color: hsl(154, 59%, 51%);
+}
+
+@media screen and (max-width:1400px){
+    .catalog {
+        background: url("bg-intro-mobile.png");
+        flex-direction: column;
+    }
+    .bottom {
+        text-align: center;
+        font-size: 16px;
+        background-color: white;
+        border: 1px grey solid;
+        padding: 20px;
+        margin: 5px;
+        margin-right: 90px;
+        width: 70%;
+        border-radius: 15px 15px;
+        margin-right: 100px;
+}
+}
